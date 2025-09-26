@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Querying Elements Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+      .highlight {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">Hello DOM!</h1>
+
+    <p class="intro">This is a paragraph with class "intro".</p>
+    <p class="intro">Here is another paragraph with the same class.</p>
+
+    <ul id="name-list">
+      <li class="name-item">Jack</li>
+      <li class="name-item">Jill</li>
+      <li class="name-item">Sam</li>
+    </ul>
+
+    <button id="demo-button">Click me</button>
+
+    <script>
+      // Demonstrations:
+
+      // Grab by ID
+      const title = document.getElementById("main-title");
+      //   console.log("getElementById:", title);
+
+      // Grab first element by CSS selector
+      const firstIntro = document.querySelector(".intro");
+      //   console.log("querySelector:", firstIntro);
+
+      // Grab all matching elements
+      const allIntros = document.querySelectorAll(".intro");
+      //   console.log("querySelectorAll:", allIntros);
+
+      // Grab by tag name
+      const listItems = document.getElementsByTagName("li");
+      //   console.log("getElementsByTagName:", listItems);
+    </script>
+  </body>
+</html>

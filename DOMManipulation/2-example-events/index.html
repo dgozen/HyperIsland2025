@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Events Practice</h1>
+
+      <section>
+        <h2>Mouse</h2>
+        <button id="btn-click">Click me</button>
+        <div id="hover-box" class="box" aria-label="hover box" tabindex="0">
+          Hover me
+        </div>
+      </section>
+
+      <section>
+        <h2>Keyboard & Input</h2>
+        <input id="name-input" type="text" placeholder="Type your name" />
+        <p id="live-output">Live: (nothing yet)</p>
+      </section>
+
+      <section>
+        <h2>Form</h2>
+        <form id="signup-form">
+          <input id="email" type="email" placeholder="Email" required />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="form-status"></p>
+      </section>
+
+      <section>
+        <h2>Page / Window</h2>
+        <p id="window-size">Size: (unknown)</p>
+      </section>
+
+      <h2>Try These</h2>
+      <ol id="exercise-list">
+        <li>On button click, change its text to “Clicked!”.</li>
+        <li>On hover over the box, add a border; remove it on mouseout.</li>
+        <li>
+          On typing in the name input, update the “Live” text in real time.
+        </li>
+        <li>
+          On form submit, prevent page reload and show “Thanks, &lt;email&gt;”.
+        </li>
+        <li>
+          On window resize, update the Size text with current width × height.
+        </li>
+      </ol>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
