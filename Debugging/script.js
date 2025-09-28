@@ -197,11 +197,9 @@
 
   function initReloadButton() {
     const reloadButton = selectElement("#reloadBtn");
-    if (reloadButton) {
-      reloadButton.addEventListener("click", function () {
-        loadMovies();
-      });
-    }
+    reloadButton.addEventListener("click", function () {
+      loadMovies();
+    });
   }
 
   // ATTENTION:
