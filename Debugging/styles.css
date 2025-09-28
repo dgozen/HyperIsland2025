@@ -1,3 +1,7 @@
+/* 
+This is the top element of each page, so it contains global styles.
+They are available to all pages.
+ */
 :root {
   --bg: #0f1115;
   --panel: #151923;
@@ -9,6 +13,7 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+/* Universal selector which means select every single element */
 * {
   box-sizing: border-box;
 }
@@ -220,15 +225,15 @@ body {
   color: var(--text);
 }
 
-/* Accessibility helpers */
+/* Accessibility helpers- only picked up by screen readers */
 .sr-only {
-  position: absolute;
-  width: 1px;
+  position: absolute; /* take it out of normal flow */
+  width: 1px; /* make it tiny */
   height: 1px;
   padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  margin: -1px; /* push it slightly off-screen */
+  overflow: hidden; /* hide anything overflowing */
+  clip: rect(0, 0, 0, 0); /* older way of hiding visually */
+  white-space: nowrap; /* prevent line breaks */
   border: 0;
 }
