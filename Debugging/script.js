@@ -134,7 +134,6 @@
     if (!moviesGrid) return;
 
     moviesGrid.setAttribute("aria-busy", "true");
-    moviesGrid.innerHTML = "";
 
     movies.forEach(function (movie) {
       const card = document.createElement("article");
@@ -171,7 +170,6 @@
     const moviesGrid = selectElement("#moviesGrid");
     if (moviesGrid) {
       moviesGrid.setAttribute("aria-busy", "true");
-      moviesGrid.innerHTML = '<div class="card">Loading movies…</div>';
     }
     return fetchMovies().then(function (data) {
       renderMovies(data);
