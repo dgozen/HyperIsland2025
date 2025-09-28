@@ -23,7 +23,7 @@ body {
     Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   background: radial-gradient(1200px 600px at 70% -10%, #1b2a41, transparent),
     linear-gradient(180deg, #0f1115, #0d1016);
-  color: var(--text);
+  color: var(--txt);
 }
 
 /* Header */
