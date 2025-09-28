@@ -110,6 +110,7 @@
 
   // ------- Dummy API -------
   function fetchMovies() {
+    return fetch("/api/movies").then((response) => response.json());
     return new Promise(function (resolve) {
       setTimeout(function () {
         resolve([

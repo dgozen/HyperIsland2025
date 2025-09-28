@@ -130,6 +130,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .intro p {
