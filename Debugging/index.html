@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugging Class Boilerplate</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a href="#" class="brand" aria-label="Home">🎬 CineLearn</a>
+
+        <div class="nav-actions">
+          <div class="dropdown" data-dropdown>
+            <button
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="main-menu"
+            >
+              Menu
+              <span class="chevron" aria-hidden="true">▾</span>
+            </button>
+            <ul id="main-menu" class="dropdown-menu" role="menu">
+              <li role="none"><a role="menuitem" href="#movies">Movies</a></li>
+              <li role="none"><a role="menuitem" href="#about">About</a></li>
+              <li role="none">
+                <a role="menuitem" href="#manage">Manage Account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card intro">
+        <h1>Welcome</h1>
+        <p>
+          The navbar has a dropdown, the footer has a language selector, and the
+          movies below are rendered from a <em>dummy API call</em>.
+        </p>
+      </section>
+
+      <section id="movies" class="movies-section">
+        <div class="section-header">
+          <h2>Top 10 Movies (Dummy API)</h2>
+          <button id="reloadBtn" class="btn" type="button">Reload</button>
+        </div>
+        <div
+          id="moviesGrid"
+          class="grid"
+          aria-live="polite"
+          aria-busy="false"
+        ></div>
+      </section>
+
+      <section id="manage" class="card manage">
+        <h2>Manage Account</h2>
+        <p>Account management area (placeholder).</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="muted">© <span id="year"></span> CineLearn</p>
+        <label for="langSelect" class="sr-only">Language</label>
+        <div class="dropdown language-picker">
+          <select id="langSelect" aria-label="Language picker">
+            <option value="sv">Swedish</option>
+            <option value="en" selected>English</option>
+            <option value="it">Italian</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

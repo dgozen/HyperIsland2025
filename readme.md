@@ -33,15 +33,45 @@ git branch -a
 
 It probably means you haven’t pulled it down yet. Try this:
 
+<<<<<<< HEAD
 ```bash
 git fetch origin
 git switch branch-name
 ```
+=======
+````bash
+git fetch origin
+git switch branch-name
+
+>>>>>>> debugging-working-state
 
 ## Move to the branch you need
 
 ```bash
 git checkout branch-name
+````
+
+## If new commits or branches were pushed
+
+When someone pushes new code or creates new branches, you may need to update your local copy.
+
+**Make sure you are on `main`**
+
+```bash
+git switch main
+```
+
+Get the latest commits on main
+
+```bash
+git pull origin main
+```
+
+Update the list of all remote branches
+(only needed if new branches were created)
+
+```bash
+git fetch --all
 ```
 
 ## If new commits or branches were pushed
